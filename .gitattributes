@@ -1,0 +1,7 @@
+# Normalize line endings
+* text=auto eol=lf
+
+# Arquivos binários devem permanecer como estão
+*.png binary
+*.jpg binary
+*.wav binary
