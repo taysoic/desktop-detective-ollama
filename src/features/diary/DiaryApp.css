@@ -1,0 +1,206 @@
+.diary-app {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.diary-sidebar {
+  width: 200px;
+  background-color: #f0f0f0;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.diary-filters {
+  margin-bottom: 20px;
+}
+
+.diary-filters h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.filter-item {
+  padding: 5px;
+  margin: 2px 0;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.filter-item:hover {
+  background-color: #e8e8e8;
+}
+
+.filter-item.active {
+  background-color: #d0d0d0;
+  font-weight: bold;
+}
+
+.relations-map {
+  flex-grow: 1;
+}
+
+.relations-map h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.relations-placeholder {
+  height: 150px;
+  background-color: #e8e8e8;
+  border: 1px dashed #aaa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  color: #666;
+}
+
+.diary-content {
+  flex-grow: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fffaf0;
+}
+
+.diary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #8b4513;
+  padding-bottom: 10px;
+}
+
+.diary-header h2 {
+  margin: 0;
+  color: #8b4513;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.diary-date {
+  font-style: italic;
+  color: #8b4513;
+}
+
+.diary-entries {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.diary-entry {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.diary-entry.conversation {
+  border-left: 5px solid #4682b4;
+}
+
+.diary-entry.evidence {
+  border-left: 5px solid #228b22;
+}
+
+.diary-entry.conclusion {
+  border-left: 5px solid #b22222;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.entry-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.entry-time {
+  font-size: 12px;
+  color: #777;
+}
+
+.entry-content {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.entry-related {
+  font-size: 12px;
+  color: #666;
+  font-style: italic;
+}
+
+.diary-new-entry {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.diary-new-entry h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.diary-new-entry input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.diary-new-entry textarea {
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  resize: none;
+}
+
+.entry-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entry-actions select {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.entry-actions button {
+  padding: 8px 12px;
+  background-color: #c0c0c0;
+  border: 2px outset #ffffff;
+  cursor: pointer;
+}
+
+.entry-actions button:active {
+  border-style: inset;
+}
