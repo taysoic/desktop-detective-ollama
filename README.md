@@ -35,27 +35,35 @@ Dona Lurdes	NPCs reveal secrets	Slower tasks
 Dr. Ice	Reveal NPC traumas	NPCs flee after 3 chats
 
 desktop-detective/
+
 ├── src/
+
 │   ├── features/
+
 │   │   ├── desktop/      # XP Interface
+
 │   │   ├── messages/     # Email system
+
 │   │   ├── detective/    # Forensic tools
+
 │   │   └── news/         # News website
+
 ├── public/               # Static assets
+
 └── package.json          # Dependencies
 
-🌐 AI Integration
+## 🌐 AI Integration
 Get API key from Google AI Studio
 Configure in-game via Assistant icon
 Or play in offline mode
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 Frontend: React 18 + TypeScript
 Styling: Tailwind CSS
 UI Components: shadcn/ui
 AI: Google Gemini API
 Audio: howler.js
-
 Build: Vite
-📜 License
+
+##📜 License
 MIT - See LICENSE for details.
